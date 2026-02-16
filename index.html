@@ -9,7 +9,7 @@
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;700;900&display=swap');
         
-        body { font-family: 'Outfit', sans-serif; background-color: #030303; color: white; overflow-x: hidden; }
+      body { font-family: 'Outfit', sans-serif; background-color: #020617; color: white; overflow-x: hidden; }
 
         .glass { 
             background: rgba(255, 255, 255, 0.02); 
@@ -18,22 +18,21 @@
             transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
         }
 
-        .glass:hover {
-            transform: translateY(-10px);
-            border-color: rgba(245, 158, 11, 0.5);
-            box-shadow: 0 20px 40px rgba(0,0,0,0.6), 0 0 20px rgba(245, 158, 11, 0.2);
-        }
+    .glass:hover {
+    transform: translateY(-10px);
+    border-color: rgba(14, 165, 233, 0.5); /* Sky Blue */
+    box-shadow: 0 20px 40px rgba(0,0,0,0.6), 0 0 20px rgba(14, 165, 233, 0.2);
+}
 
-        .gradient-orange { background: linear-gradient(135deg, #f59e0b 0%, #fbbf24 100%); }
-        .neon-text { text-shadow: 0 0 15px rgba(245, 158, 11, 0.6); }
+        .gradient-orange { background: linear-gradient(135deg, #0ea5e9 0%, #2563eb 100%); }
+        .neon-text { text-shadow: 0 0 15px rgba(14, 165, 233, 0.6); }
 
-        .marquee-container {
-            overflow: hidden;
-            white-space: nowrap;
-            background: rgba(245, 158, 11, 0.1);
-            border-bottom: 1px solid rgba(245, 158, 11, 0.2);
-            padding: 8px 0;
-        }
+     .marquee-container {
+    background: rgba(14, 165, 233, 0.1);
+    border-bottom: 1px solid rgba(14, 165, 233, 0.2);
+}
+
+::-webkit-scrollbar-thumb { background: #0ea5e9; border-radius: 10px; }
 
         .marquee-content {
             display: inline-block;
@@ -361,4 +360,3 @@
     </script>
 </body>
 </html>
-
