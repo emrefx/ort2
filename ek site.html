@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="tr" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ortaklar İzolasyon | İzmir Su Yalıtımının Tek Otoritesi</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;700;900&display=swap');
+        
+        body { font-family: 'Outfit', sans-serif; background-color: #030303; color: white; overflow-x: hidden; }
+
+        .glass { 
+            background: rgba(255, 255, 255, 0.02); 
+            backdrop-filter: blur(15px); 
+            border: 1px solid rgba(255,255,255,0.08); 
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        }
+
+        .glass:hover {
+            transform: translateY(-10px);
+            border-color: rgba(245, 158, 11, 0.5);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.6), 0 0 20px rgba(245, 158, 11, 0.2);
+        }
+
+        .gradient-orange { background: linear-gradient(135deg, #f59e0b 0%, #fbbf24 100%); }
+        .neon-text { text-shadow: 0 0 15px rgba(245, 158, 11, 0.6); }
+
+        .marquee-container {
+            overflow: hidden;
+            white-space: nowrap;
+            background: rgba(245, 158, 11, 0.1);
+            border-bottom: 1px solid rgba(245, 158, 11, 0.2);
+            padding: 8px 0;
+        }
+
+        .marquee-content {
+            display: inline-block;
+            animation: marquee 20s linear infinite;
+        }
+
+        @keyframes marquee {
+            0% { transform: translateX(100%); }
+            100% { transform: translateX(-100%); }
+        }
+
+        .reveal { opacity: 0; transform: translateY(30px); transition: all 0.8s ease-out; }
+        .reveal.active { opacity: 1; transform: translateY(0); }
+
+        .robot-input { background: #fff !important; color: #000 !important; font-weight: 800; border-radius: 12px; }
+        ::-webkit-scrollbar { width: 6px; }
+        ::-webkit-scrollbar-thumb { background: #f59e0b; border-radius: 10px; }
+
+        .map-container iframe { filter: grayscale(100%) invert(90%) contrast(90%); }
+        .wp-bounce { animation: bounce 2s infinite; }
+        @keyframes bounce { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-10px); } }
+    </style>
+</head>
+<body>
+
+    <div class="marquee-container fixed top-0 w-full z-[1100] backdrop-blur-md">
+        <div class="marquee-content font-black text-[10px] uppercase tracking-[0.3em] text-amber-500">
+            🔥 İzmir'in En Güçlü Yalıtım Teknolojileri — Ücretsiz Keşif Hattı: 0536 037 85 83 — 15 Yıl Sızdırmazlık Garantisi — Endüstriyel Çözümler — Ortaklar İzolasyon Güvencesiyle Yapılarınız Zırhlanıyor — ⚡
+        </div>
+    </div>
+
+    <nav class="fixed w-full z-[1000] glass border-b border-white/10 top-[35px]">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex justify-between items-center">
+            <div class="flex items-center space-x-3 group cursor-pointer">
+                <div class="w-12 h-12 gradient-orange rounded-xl flex items-center justify-center font-black text-black text-2xl shadow-[0_0_20px_rgba(245,158,11,0.4)] transition group-hover:rotate-12">Oİ</div>
+                <div class="leading-none">
+                    <span class="block text-xl font-black tracking-tighter uppercase">ORTAKLAR</span>
+                    <span class="block text-[10px] tracking-[0.3em] text-amber-500 font-bold uppercase italic text-nowrap">Zırhlı Yalıtım Teknolojileri</span>
+                </div>
+            </div>
+            <div class="hidden md:flex items-center space-x-8 text-[11px] font-black uppercase tracking-widest">
+                <a href="#hakkimizda" class="hover:text-amber-500 transition">Biz Kimiz</a>
+                <a href="#uzmanlik" class="hover:text-amber-500 transition">Hizmetler</a>
+                <a href="#sss" class="hover:text-amber-500 transition">SSS</a>
+                <a href="galeri.html" class="hover:text-amber-500 transition border-b border-amber-500/0 hover:border-amber-500">PROJE GALERİSİ</a>
+                <a href="#robot" class="text-amber-500 bg-amber-500/10 px-5 py-2 rounded-lg border border-amber-500/20">Fiyat Robotu</a>
+                <a href="tel:05360378583" class="gradient-orange text-black px-6 py-2 rounded-full hover:shadow-lg transition">Hemen Ara</a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="min-h-screen pt-56 pb-20 px-6 relative flex flex-col items-center justify-center text-center">
+        <div class="absolute top-0 left-1/2 -translate-x-1/2 w-full h-[600px] bg-amber-600/10 blur-[150px] rounded-full -z-10"></div>
+        <div class="reveal">
+            <h1 class="text-6xl md:text-[9rem] font-black mb-8 leading-[0.85] tracking-tighter uppercase">
+                <div class="flex justify-center mb-6">
+    <div class="glass px-4 py-2 rounded-full border border-emerald-500/30 flex items-center gap-3 bg-emerald-500/5">
+        <span class="relative flex h-3 w-3">
+            <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+            <span class="relative inline-flex rounded-full h-3 w-3 bg-emerald-500 shadow-[0_0_10px_#10b981]"></span>
+        </span>
+        <span class="text-[10px] md:text-xs font-black uppercase tracking-[0.2em] text-emerald-400 italic">
+            Gaziemir Merkez: Saha Ekipleri Aktif
+        </span>
+    </div>
+</div>
+                ORTAKLAR <br> <span class="text-amber-500 italic neon-text">İZOLASYON</span>
+            </h1>
+            <p class="text-gray-400 text-xl md:text-2xl max-w-4xl mx-auto mb-12 italic leading-relaxed">
+                İzmir’in her noktasında binalarınızı suya karşı <span class="text-white font-bold uppercase">Mühendislik Zırhıyla</span> koruyoruz. Nem ve korozyon artık bir risk değil, çözülmüş bir problem. 🏗️
+            </p>
+            <div class="flex flex-wrap justify-center gap-6">
+                <a href="#robot" class="gradient-orange text-black font-black px-12 py-5 rounded-2xl text-lg hover:shadow-[0_0_30px_rgba(245,158,11,0.5)] transition uppercase scale-100 hover:scale-105">MALİYET HESAPLA</a>
+                <a href="galeri.html" class="glass px-12 py-5 rounded-2xl text-lg font-bold hover:bg-white/10 transition border border-white/10 uppercase italic">UYGULAMA GALERİSİ</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="hakkimizda" class="py-24 px-6 border-y border-white/5 bg-white/[0.01]">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid lg:grid-cols-2 gap-20 items-center mb-24">
+                <div class="reveal">
+                    <h2 class="text-5xl font-black uppercase italic mb-8 tracking-tighter text-amber-500">BİZ KİMİZ?</h2>
+                    <div class="space-y-6 text-gray-400 leading-relaxed italic text-lg">
+                        <p>Ortaklar İzolasyon, İzmir'in zemin yapısını ve su yalıtımındaki kronikleşmiş hataları analiz ederek kurulmuş uzman bir mühendislik ekibidir.</p>
+                        <p>Hedefimiz sadece sızıntıyı durdurmak değil, yapıların taşıyıcı sistemlerini koruyarak deprem güvenliğini ve yapı ömrünü maksimize etmektir. TSE standartlarında malzeme ve hatasız işçilik, bizim değişmez imzamızdır.</p>
+                    </div>
+                </div>
+                <div class="grid grid-cols-2 gap-6 reveal" style="transition-delay: 0.2s;">
+                    <div class="glass p-10 rounded-[40px] border-b-8 border-amber-500 flex flex-col items-center">
+                        <span class="text-5xl font-black mb-2 italic">20<span class="text-amber-500">+</span></span>
+                        <span class="text-[10px] text-gray-500 font-bold uppercase tracking-[0.3em]">Yıllık Tecrübe</span>
+                    </div>
+                    <div class="glass p-10 rounded-[40px] border-t-8 border-amber-500 flex flex-col items-center">
+                        <span class="text-5xl font-black mb-2 italic">%100</span>
+                        <span class="text-[10px] text-gray-500 font-bold uppercase tracking-[0.3em]">Müşteri Memnuniyeti</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-10 reveal">
+                <div class="glass p-12 rounded-[50px] border-l-4 border-amber-600 shadow-2xl">
+                    <h3 class="text-2xl font-black uppercase italic mb-6 text-white flex items-center gap-4">
+                        <span class="w-8 h-8 gradient-orange rounded-full"></span> MİSYONUMUZ
+                    </h3>
+                    <p class="text-gray-400 italic text-lg leading-relaxed">"Sıfır Hata" prensibiyle, en modern izolasyon sistemlerini her bütçeye uygun, şeffaf ve garantili bir şekilde İzmirlilere sunmak.</p>
+                </div>
+                <div class="glass p-12 rounded-[50px] border-r-4 border-amber-600 shadow-2xl text-right">
+                    <h3 class="text-2xl font-black uppercase italic mb-6 text-white flex items-center gap-4 justify-end">
+                        VİZYONUMUZ <span class="w-8 h-8 gradient-orange rounded-full"></span>
+                    </h3>
+                    <p class="text-gray-400 italic text-lg leading-relaxed">İzmir genelinde yalıtım denince akla gelen, teknolojik yenilikleri sahaya ilk yansıtan ve sektörün kalite standartlarını belirleyen tek otorite olmak.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="uzmanlik" class="py-24 px-6">
+        <div class="max-w-7xl mx-auto text-center mb-16 reveal">
+            <h2 class="text-4xl font-black italic uppercase tracking-tighter mb-4 italic">HİZMETLERİMİZ</h2>
+            <div class="w-20 h-1 gradient-orange mx-auto rounded-full"></div>
+        </div>
+        <div class="max-w-7xl mx-auto grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div class="glass p-8 rounded-[30px] border-b-4 border-amber-500 reveal">
+                <h3 class="text-xl font-bold text-white mb-3 italic">✓ Havuz İzolasyonu</h3>
+                <p class="text-gray-400 text-sm italic">Sızdırmazlık garantili havuz çözümleriyle su kaybını sıfıra indiriyoruz.</p>
+            </div>
+            <div class="glass p-8 rounded-[30px] border-b-4 border-amber-500 reveal" style="transition-delay: 0.1s;">
+                <h3 class="text-xl font-bold text-white mb-3 italic">✓ Çatı İzolasyonu</h3>
+                <p class="text-gray-400 text-sm italic">Hava şartlarına dayanıklı, ömürlük çatı koruma sistemleri.</p>
+            </div>
+            <div class="glass p-8 rounded-[30px] border-b-4 border-amber-500 reveal" style="transition-delay: 0.2s;">
+                <h3 class="text-xl font-bold text-white mb-3 italic">✓ Teras İzolasyonu</h3>
+                <p class="text-gray-400 text-sm italic">Teraslarınızda estetik ve %100 su geçirmezlik bir arada.</p>
+            </div>
+            <div class="glass p-8 rounded-[30px] border-b-4 border-amber-500 reveal" style="transition-delay: 0.3s;">
+                <h3 class="text-xl font-bold text-white mb-3 italic">✓ Temel İzolasyonu</h3>
+                <p class="text-gray-400 text-sm italic">Bina temellerini nemden koruyan profesyonel bohçalama sistemleri.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="robot" class="py-16 px-6 bg-white/[0.01]">
+        <div class="max-w-md mx-auto glass p-10 rounded-[40px] border border-amber-500/20 shadow-2xl reveal">
+            <h3 class="text-xl font-black text-center mb-8 uppercase italic tracking-[0.2em] text-amber-500">Maliyet Hesapla</h3>
+            <div class="space-y-4 text-black">
+                <input type="number" id="m2Input" placeholder="Metrekare Giriniz (m²)" class="w-full bg-white p-4 rounded-xl font-bold outline-none border-2 border-transparent focus:border-amber-500 transition text-black">
+                <select id="islemTipi" class="w-full bg-white p-4 rounded-xl font-bold outline-none border-2 border-transparent focus:border-amber-500 transition text-black">
+                    <option value="650">Temel Bohçalama</option>
+                    <option value="450">Teras İzolasyonu</option>
+                    <option value="350">Çatı Membran</option>
+                </select>
+                <div class="bg-black/40 p-6 rounded-2xl border border-amber-500/30 text-center">
+                    <span class="text-[10px] font-black text-gray-500 uppercase block mb-1">Tahmini Tutar</span>
+                    <div class="text-4xl font-black text-white italic" id="toplamFiyat">0 TL</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="iletisim" class="py-24 px-6 border-t border-white/5">
+        <div class="max-w-7xl mx-auto grid lg:grid-cols-2 gap-16">
+            <div class="space-y-10">
+                <div id="sss" class="reveal">
+                    <h2 class="text-4xl font-black uppercase mb-8 italic text-amber-500 text-nowrap">SIKÇA SORULANLAR</h2>
+                    <div class="space-y-3">
+                        <div class="glass p-4 rounded-xl cursor-pointer group hover:bg-white/[0.05] transition-all" onclick="this.nextElementSibling.classList.toggle('hidden')">
+                            <div class="flex justify-between items-center font-bold text-[11px] uppercase tracking-widest">
+                                <span>Uygulamalarınız kaç yıl garantili?</span> 
+                                <i class="fa-solid fa-plus text-amber-500 group-hover:rotate-90 transition-transform"></i>
+                            </div>
+                        </div>
+                        <p class="hidden p-4 text-xs italic text-gray-400 border-l-2 border-amber-500 ml-2 bg-white/[0.02] rounded-r-xl">Tüm izolasyon ve yalıtım projelerimizde 5 yıl resmi sızdırmazlık garantisi sunuyoruz.</p>
+                        
+                        <div class="glass p-4 rounded-xl cursor-pointer group hover:bg-white/[0.05] transition-all" onclick="this.nextElementSibling.classList.toggle('hidden')">
+                            <div class="flex justify-between items-center font-bold text-[11px] uppercase tracking-widest">
+                                <span>Ücretsiz keşif hizmetiniz var mı?</span> 
+                                <i class="fa-solid fa-plus text-amber-500 group-hover:rotate-90 transition-transform"></i>
+                            </div>
+                        </div>
+                        <p class="hidden p-4 text-xs italic text-gray-400 border-l-2 border-amber-500 ml-2 bg-white/[0.02] rounded-r-xl">Evet, İzmir merkez ve tüm ilçelerinde yerinde teknik analiz ve keşif hizmetimiz tamamen ücretsizdir.</p>
+
+                        <div class="glass p-4 rounded-xl cursor-pointer group hover:bg-white/[0.05] transition-all" onclick="this.nextElementSibling.classList.toggle('hidden')">
+                            <div class="flex justify-between items-center font-bold text-[11px] uppercase tracking-widest">
+                                <span>Fiyatlandırmayı neye göre yapıyorsunuz?</span> 
+                                <i class="fa-solid fa-plus text-amber-500 group-hover:rotate-90 transition-transform"></i>
+                            </div>
+                        </div>
+                        <p class="hidden p-4 text-xs italic text-gray-400 border-l-2 border-amber-500 ml-2 bg-white/[0.02] rounded-r-xl">Metrekare büyüklüğü, kullanılacak malzeme tipi ve zeminin hazırlık ihtiyacına göre şeffaf bir fiyatlandırma sunuyoruz.</p>
+
+                        <div class="glass p-4 rounded-xl cursor-pointer group hover:bg-white/[0.05] transition-all" onclick="this.nextElementSibling.classList.toggle('hidden')">
+                            <div class="flex justify-between items-center font-bold text-[11px] uppercase tracking-widest">
+                                <span>Negatif yönden (içeriden) yalıtım yapıyor musunuz?</span> 
+                                <i class="fa-solid fa-plus text-amber-500 group-hover:rotate-90 transition-transform"></i>
+                            </div>
+                        </div>
+                        <p class="hidden p-4 text-xs italic text-gray-400 border-l-2 border-amber-500 ml-2 bg-white/[0.02] rounded-r-xl">Evet, dışarıdan müdahale edilemeyen bodrum ve asansör kuyusu gibi alanlarda kristalize enjeksiyon sistemleri ile içeriden kesin çözüm sağlıyoruz.</p>
+
+                        <div class="glass p-4 rounded-xl cursor-pointer group hover:bg-white/[0.05] transition-all" onclick="this.nextElementSibling.classList.toggle('hidden')">
+                            <div class="flex justify-between items-center font-bold text-[11px] uppercase tracking-widest">
+                                <span>Yalıtım binaların deprem güvenliğini etkiler mi?</span> 
+                                <i class="fa-solid fa-plus text-amber-500 group-hover:rotate-90 transition-transform"></i>
+                            </div>
+                        </div>
+                        <p class="hidden p-4 text-xs italic text-gray-400 border-l-2 border-amber-500 ml-2 bg-white/[0.02] rounded-r-xl">Kesinlikle. Su yalıtımı demirlerin korozyona uğramasını engeller. Paslanmayan demir, binanın deprem anındaki esnekliğini ve mukavemetini korur.</p>
+
+                        <div class="glass p-4 rounded-xl cursor-pointer group hover:bg-white/[0.05] transition-all" onclick="this.nextElementSibling.classList.toggle('hidden')">
+                            <div class="flex justify-between items-center font-bold text-[11px] uppercase tracking-widest">
+                                <span>Uygulama süresi ortalama kaç gündür?</span> 
+                                <i class="fa-solid fa-plus text-amber-500 group-hover:rotate-90 transition-transform"></i>
+                            </div>
+                        </div>
+                        <p class="hidden p-4 text-xs italic text-gray-400 border-l-2 border-amber-500 ml-2 bg-white/[0.02] rounded-r-xl">Projenin büyüklüğüne göre değişmekle birlikte, standart bir teras veya temel izolasyonu hava şartları uygunsa 3-5 iş günü içerisinde tamamlanır.</p>
+                    </div>
+                </div>
+
+                <div class="space-y-6 reveal">
+                    <div class="h-64 rounded-[30px] overflow-hidden map-container border border-white/10 shadow-xl">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3129.5664!2d27.13!3d38.3!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzjCsDE4JzAwLjAiTiAyN8KwMDcnNDguMCJF!5e0!3m2!1str!2str!4v1620000000000!5m2!1str!2str" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+                </div>
+            </div>
+
+            <div class="reveal">
+                <div class="space-y-6">
+                    <div class="glass p-8 rounded-[40px] border border-white/10 shadow-2xl relative overflow-hidden group">
+                        <div class="absolute -top-24 -right-24 w-48 h-48 bg-amber-500/10 blur-[80px] rounded-full group-hover:bg-amber-500/20 transition-all"></div>
+                        
+                        <div class="relative z-10">
+                            <h3 class="text-2xl font-black mb-1 uppercase italic text-amber-500 tracking-tighter">Hemen Teklif Al</h3>
+                            <p class="text-[9px] text-gray-500 font-bold uppercase tracking-[0.2em] mb-6 italic">Hızlı dönüş ve ücretsiz keşif için formu doldurun.</p>
+                            
+                            <form class="space-y-4">
+                                <div class="relative">
+                                    <span class="absolute left-4 top-1/2 -translate-y-1/2 text-amber-500/50 text-xs"><i class="fa-solid fa-user"></i></span>
+                                    <input type="text" placeholder="ADINIZ SOYADINIZ" class="w-full bg-white/[0.03] border border-white/10 p-4 pl-12 rounded-2xl outline-none focus:border-amber-500/50 text-[11px] font-black text-white uppercase tracking-widest transition-all">
+                                </div>
+                                <div class="relative">
+                                    <span class="absolute left-4 top-1/2 -translate-y-1/2 text-amber-500/50 text-xs"><i class="fa-solid fa-phone"></i></span>
+                                    <input type="tel" placeholder="TELEFON NUMARANIZ" class="w-full bg-white/[0.03] border border-white/10 p-4 pl-12 rounded-2xl outline-none focus:border-amber-500/50 text-[11px] font-black text-white uppercase tracking-widest transition-all">
+                                </div>
+                                <div class="relative">
+                                    <span class="absolute left-4 top-5 text-amber-500/50 text-xs"><i class="fa-solid fa-pen-nib"></i></span>
+                                    <textarea rows="2" placeholder="MESAJINIZ" class="w-full bg-white/[0.03] border border-white/10 p-4 pl-12 rounded-2xl outline-none focus:border-amber-500/50 text-[11px] font-black text-white uppercase tracking-widest transition-all resize-none"></textarea>
+                                </div>
+                                <button type="submit" class="w-full gradient-orange text-black font-black py-4 rounded-2xl text-[11px] uppercase tracking-[0.3em] hover:scale-[1.02] active:scale-95 transition-all shadow-[0_10px_30px_rgba(245,158,11,0.3)]">
+                                    GÖNDER <i class="fa-solid fa-paper-plane ml-2"></i>
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+
+                    <div class="glass p-6 rounded-[40px] border-l-8 border-amber-500 bg-[#0a0c10] shadow-2xl relative overflow-hidden group">
+                        <div class="relative z-10 space-y-4">
+                            <h4 class="text-sm font-black text-white uppercase italic tracking-widest border-b border-white/5 pb-2">İletişim Bilgilerimiz</h4>
+                            <div class="flex items-center gap-4">
+                                <div class="w-8 h-8 gradient-orange rounded-lg flex items-center justify-center text-black text-xs shadow-lg font-bold">RÖ</div>
+                                <div>
+                                    <p class="text-[8px] text-amber-500 font-black uppercase tracking-widest leading-none mb-1">Yetkili Kişi</p>
+                                    <p class="text-sm font-bold text-white tracking-wide">Recep Özlü</p>
+                                </div>
+                            </div>
+                            <div class="flex items-center gap-4">
+                                <div class="w-8 h-8 gradient-orange rounded-lg flex items-center justify-center text-black text-xs shadow-lg"><i class="fa-solid fa-phone"></i></div>
+                                <div>
+                                    <p class="text-[8px] text-amber-500 font-black uppercase tracking-widest leading-none mb-1">Telefon Hattı</p>
+                                    <a href="tel:05360378583" class="text-sm font-bold text-white hover:text-amber-500 transition-colors">0536 037 85 83</a>
+                                </div>
+                            </div>
+                            <div class="flex items-start gap-4">
+                                <div class="w-8 h-8 gradient-orange rounded-lg flex items-center justify-center text-black text-xs shadow-lg shrink-0"><i class="fa-solid fa-location-dot"></i></div>
+                                <div>
+                                    <p class="text-[8px] text-amber-500 font-black uppercase tracking-widest leading-none mb-1">Merkez Adres</p>
+                                    <p class="text-[11px] font-bold text-gray-400 italic leading-snug">Havacılar Cd. No:22/M Gaziemir / İZMİR</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-20 px-6 bg-amber-500/5 border-y border-amber-500/10 text-center reveal">
+        <h2 class="text-4xl font-black italic uppercase text-white mb-6 tracking-tighter">İşimizi <span class="text-amber-500">Görmek İster Misiniz?</span></h2>
+        <p class="text-gray-400 max-w-2xl mx-auto mb-10 italic uppercase font-bold text-xs tracking-widest leading-relaxed">Gerçekleştirdiğimiz yüzlerce projeyi galeri sayfamızda inceleyebilirsiniz.</p>
+        <a href="galeri.html" class="inline-block px-12 py-5 border-2 border-amber-500 text-amber-500 font-black uppercase italic tracking-[0.3em] rounded-full hover:bg-amber-500 hover:text-black transition-all duration-500">
+            GALERİYİ GÖRÜNTÜLE <i class="fa-solid fa-images ml-3"></i>
+        </a>
+    </section>
+
+    <footer class="py-12 text-center text-gray-600 text-[10px] font-bold uppercase tracking-[0.5em]">
+        © 2026 Ortaklar İzolasyon — Tüm Hakları Saklıdır.
+    </footer>
+
+    <a href="https://wa.me/905360378583" class="fixed bottom-10 right-10 bg-[#25d366] text-white w-16 h-16 rounded-full flex items-center justify-center text-3xl shadow-2xl z-[2000] wp-bounce hover:scale-110 transition-all">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+    <script>
+        function reveal() {
+            var reveals = document.querySelectorAll(".reveal");
+            for (var i = 0; i < reveals.length; i++) {
+                var windowHeight = window.innerHeight;
+                var elementTop = reveals[i].getBoundingClientRect().top;
+                if (elementTop < windowHeight - 100) {
+                    reveals[i].classList.add("active");
+                }
+            }
+        }
+        window.addEventListener("scroll", reveal);
+        window.onload = reveal;
+
+        const m2Input = document.getElementById('m2Input');
+        const islemSelect = document.getElementById('islemTipi');
+        const fiyatDisplay = document.getElementById('toplamFiyat');
+
+        function hesapla() {
+            let m2 = parseFloat(m2Input.value) || 0;
+            let birim = parseFloat(islemSelect.value);
+            fiyatDisplay.innerText = (m2 * birim).toLocaleString('tr-TR') + ' TL';
+        }
+        m2Input.addEventListener('input', hesapla);
+        islemSelect.addEventListener('change', hesapla);
+    </script>
+</body>
+</html>
